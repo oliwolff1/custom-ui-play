@@ -19,6 +19,31 @@ const Layout = async ({ request, context }) => {
   return (
     <html lang="en">
       <head>
+      <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex" />
+        <meta name="csrf-token" content={getKindeCSRF()} />
+        <title>{context.widget.content.page_title}</title>
+
+        <link rel="icon" href={getSVGFaviconUrl()} type="image/svg+xml" />
+        {getKindeRequiredCSS()}
+        {getKindeRequiredJS()}
+        
+        <style nonce={getKindeNonce()}>
+          {`:root {
+          --kinde-button-primary-background-color-hover: #fcdced;
+          --kinde-button-secondary-background-color-hover: #fcdced;
+          ${setKindeDesignerCustomProperties({
+            baseBackgroundColor: "#fff",
+            baseLinkColor: "#230078",
+            buttonBorderRadius: "0.5rem",
+            primaryButtonBackgroundColor: "#e9edfd",
+            primaryButtonColor: "#1f2439",
+            inputBorderRadius: "0.5rem",
+            
+          })}}
+          `}
+        </style>
         <title>Login - Secure Authentication</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style nonce={getKindeNonce()}>{`
