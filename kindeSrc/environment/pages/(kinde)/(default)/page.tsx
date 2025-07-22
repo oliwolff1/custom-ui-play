@@ -287,8 +287,9 @@ const Layout = async ({ request, context }) => {
           <div className="logo"></div>
           <h1>Welcome Back</h1>
           <p className="subtitle">Sign in to access your secure account</p>
-
-          {getKindeWidget()}
+          <div className="kinde-widget">
+            {getKindeWidget()}
+          </div>
 
           <div className="features">
             <div className="feature">
