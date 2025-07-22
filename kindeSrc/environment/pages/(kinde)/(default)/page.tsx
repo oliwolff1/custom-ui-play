@@ -38,7 +38,7 @@ const Layout = async ({ request, context }) => {
             baseLinkColor: "#230078",
             buttonBorderRadius: "0.5rem",
             primaryButtonBackgroundColor: "#e9edfd",
-            primaryButtonColor: "#1f2439ff",
+            primaryButtonColor: "#1f2439",
             inputBorderRadius: "0.5rem",
             
           })}}
