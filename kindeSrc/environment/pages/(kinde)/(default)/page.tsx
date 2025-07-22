@@ -263,11 +263,7 @@ const Layout = async ({ request, context }) => {
           <h1>Welcome Back</h1>
           <p className="subtitle">Sign in to access your secure account</p>
 
-          <form action="/api/auth/login" method="get">
-            <button type="submit" className="login-btn">
-              Continue with Kinde
-            </button>
-          </form>
+          getKindeWidget()
 
           <div className="features">
             <div className="feature">
