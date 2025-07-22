@@ -263,7 +263,7 @@ const Layout = async ({ request, context }) => {
           <h1>Welcome Back</h1>
           <p className="subtitle">Sign in to access your secure account</p>
 
-          getKindeWidget()
+          {getKindeWidget()}
 
           <div className="features">
             <div className="feature">
